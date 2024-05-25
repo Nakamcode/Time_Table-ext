@@ -1,0 +1,14 @@
+{
+  "name": "Nodethefu",
+  "version": "1.0.0",
+  "description": "Now determines the future",
+  "manifest_version": 3,
+  "author": "Nakam",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Nodethefu"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

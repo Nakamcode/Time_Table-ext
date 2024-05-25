@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nodethefu</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Chrome extension avoid external src execution, because it violates the following Content Security Policy directive: "script-src 'self'". 
+      so I downloaded the source code -->
+    <script type="module" src="./script.js"></script>
+    <script src="./chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <p class="notice">Nodethefu</p>
+      <div class="card">
+        <table class="t_table">
+          <th><img src="./calendar3.svg" alt="" /></th>
+          <th id="day-el"></th>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td class="task"></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td class="task"></td>
+          </tr>
+        </table>
+        <br />
+
+        <div class="col-2">
+          <table class="graph">
+            <tr>
+              <td>S</td>
+              <td>M</td>
+              <td>T</td>
+              <td>W</td>
+              <td>T</td>
+              <td>F</td>
+              <td>S</td>
+            </tr>
+            <tr>
+              <td class="not_part_m"></td>
+              <td class="not_part_m"></td>
+              <td class="not_part_m"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+            </tr>
+            <tr>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+            </tr>
+            <tr>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+            </tr>
+            <tr>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+            </tr>
+            <tr>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+              <td class="g_data"></td>
+            </tr>
+          </table>
+          <div class="chart">
+            <div>
+              <canvas id="myChart" style="width: 150px; height: 150px"></canvas>
+            </div>
+            <div class="legend">
+              <div class="label">
+                <div class="label-text pd"></div>
+                <span>days gone</span>
+              </div>
+              <div class="label">
+                <div class="label-text rd"></div>
+                <span>days left</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
